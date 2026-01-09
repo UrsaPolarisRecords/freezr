@@ -183,22 +183,22 @@ If using Codex/agents, follow AGENTS.md and take tasks from TASKS.md.
 
 ## Roadmap (MVP Milestones)
 
-App scaffold + routing + styling
+1. App scaffold + routing + styling
 
-Supabase integration + env validation
+2. Supabase integration + env validation
 
-DB schema + migrations
+3. DB schema + migrations
 
-Auth + wallet (ledger-derived balance)
+4. Auth + wallet (ledger-derived balance)
 
-Listings create/browse/detail
+5. Listings create/browse/detail
 
-Verification flow (geofence + photo proof)
+6. Verification flow (geofence + photo proof)
 
-Token minting on verified gone
+7. Token minting on verified gone
 
-Messages create/list
+8. Messages create/list
 
-Promotion zones + sponsor purchase + splits + doubling price
+9. Promotion zones + sponsor purchase + splits + doubling price
 
-Activity feed (sponsored pinned + nearby messages)
+10. Activity feed (sponsored pinned + nearby messages)
