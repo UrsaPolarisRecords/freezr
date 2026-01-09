@@ -117,3 +117,16 @@ http://localhost:3000/health
 ```
 
 The page should show **OK** when Supabase is reachable.
+
+---
+
+## DB setup (Supabase)
+
+Migrations live in `supabase/migrations`. To apply locally with the Supabase CLI:
+
+```bash
+supabase start
+supabase db reset
+```
+
+See `supabase/README.md` for manual steps.
