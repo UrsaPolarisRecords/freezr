@@ -1,5 +1,6 @@
 import "./globals.css";
 import type { Metadata } from "next";
+import EnvSetupNotice from "@/components/EnvSetupNotice";
 import PrimaryNav from "@/components/PrimaryNav";
 
 export const metadata: Metadata = {
@@ -28,6 +29,9 @@ export default function RootLayout({
             </div>
             <PrimaryNav />
           </header>
+          <div className="mt-6">
+            <EnvSetupNotice />
+          </div>
           <main className="mt-8 flex-1">{children}</main>
           <footer className="mt-12 text-sm text-slate-500">
             Built for the MVP scaffold · Next.js + Tailwind

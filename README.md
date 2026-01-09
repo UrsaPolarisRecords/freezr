@@ -80,6 +80,11 @@ REWARD_VERIFIER=10
 
 `NEXT_PUBLIC_*` variables are exposed to the client. Keep server-only keys private.
 
+Required for Supabase connectivity:
+
+- `NEXT_PUBLIC_SUPABASE_URL`
+- `NEXT_PUBLIC_SUPABASE_ANON_KEY`
+
 ---
 
 ## Scripts
@@ -102,38 +107,13 @@ pnpm lint
 pnpm typecheck
 pnpm test
 ```
-Make small PRs (1 feature per PR).
 
-Keep pnpm dev working at all times.
+## Health Check
 
-Every PR includes:
+After setting Supabase env vars, run the dev server and visit:
 
-what changed
+```
+http://localhost:3000/health
+```
 
-how to test
-
-any new env vars and schema changes
-
-If using Codex/agents, follow AGENTS.md and take tasks from TASKS.md.
-
-## Roadmap (MVP Milestones)
-
-1. App scaffold + routing + styling
-
-2. Supabase integration + env validation
-
-3. DB schema + migrations
-
-4. Auth + wallet (ledger-derived balance)
-
-5. Listings create/browse/detail
-
-6. Verification flow (geofence + photo proof)
-
-7. Token minting on verified gone
-
-8. Messages create/list
-
-9. Promotion zones + sponsor purchase + splits + doubling price
-
-10. Activity feed (sponsored pinned + nearby messages)
+The page should show **OK** when Supabase is reachable.

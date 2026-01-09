@@ -6,7 +6,8 @@ const navItems = [
   { href: "/messages", label: "Messages" },
   { href: "/sponsor", label: "Sponsor" },
   { href: "/feed", label: "Feed" },
-  { href: "/wallet", label: "Wallet" }
+  { href: "/wallet", label: "Wallet" },
+  { href: "/health", label: "Health" }
 ];
 
 export default function PrimaryNav() {
