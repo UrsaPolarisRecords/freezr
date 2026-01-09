@@ -102,3 +102,38 @@ pnpm lint
 pnpm typecheck
 pnpm test
 ```
+Make small PRs (1 feature per PR).
+
+Keep pnpm dev working at all times.
+
+Every PR includes:
+
+what changed
+
+how to test
+
+any new env vars and schema changes
+
+If using Codex/agents, follow AGENTS.md and take tasks from TASKS.md.
+
+## Roadmap (MVP Milestones)
+
+1. App scaffold + routing + styling
+
+2. Supabase integration + env validation
+
+3. DB schema + migrations
+
+4. Auth + wallet (ledger-derived balance)
+
+5. Listings create/browse/detail
+
+6. Verification flow (geofence + photo proof)
+
+7. Token minting on verified gone
+
+8. Messages create/list
+
+9. Promotion zones + sponsor purchase + splits + doubling price
+
+10. Activity feed (sponsored pinned + nearby messages)
